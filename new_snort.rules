@@ -1,0 +1,12 @@
+alert tcp any any -> $HOME_NET 21 (msg:"Connection to FTP port 21"; sid:2525040; rev:1;) 
+
+alert tcp any any -> $HOME_NET 22 (msg:"Connection to SSH port 22"; sid:2525041; rev:1;)
+
+alert tcp any any -> $HOME_NET 23 (msg:"Connection to Telnet port 23"; sid:2525042; rev:1;)
+
+alert tcp any any -> $HOME_NET 25 (msg:"Connection to SMTP port 25"; sid:2525043; rev:1;)
+
+alert tcp any any -> $HOME_NET 80 (msg:"Connection to HTTP port 80"; sid:2525044; rev:1;)
+
+alert tcp any any -> $HOME_NET 443 (msg:"Connection to HTTPS port 443"; sid:2525045; rev:1;)
+
